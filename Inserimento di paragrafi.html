@@ -7,9 +7,9 @@
 <textarea id="ta"></textarea>
 <button id="b1"> Aggiungi </button>
 <script>
-oggettoB1=document.GetElementById("b1");
-oggettoTa=document.GetElementById("ta");
-oggettoB1.addEventListener("Click",aggiungiP);
+oggettoB1=document.getElementById("b1");
+oggettoTa=document.getElementById("ta");
+oggettoB1.addEventListener("click",aggiungiP);
 function aggiungiP(){
 	nuovoP=document.createElement("p");
 	nuovoP.innerHTML=oggettoTa.value;
