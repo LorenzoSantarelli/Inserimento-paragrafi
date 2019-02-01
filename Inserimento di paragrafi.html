@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<head>
+<meta charset="utf-8"/>
+<title> titolo </title>
+</head>
+<body>
+<textarea id="ta"></textarea>
+<button id="b1"> Aggiungi </button>
+<script>
+oggettoB1=document.GetElementById("b1");
+oggettoTa=document.GetElementById("ta");
+oggettoB1.addEventListener("Click",aggiungiP);
+function aggiungiP(){
+	nuovoP=document.createElement("p");
+	nuovoP.innerHTML=oggettoTa.value;
+	oggettoBody=oggettoTa.parentNode;
+	oggettoBody.appendChild(nuovoP);
+}
+</script>
+</body>
+</html>
